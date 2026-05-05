@@ -12,49 +12,39 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Meng Wei home">Meng Wei</a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a class="cv-link" href="assets/Meng_Wei_CV.pdf">CV</a>
-      </nav>
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="Meng Wei home">Meng Wei</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#honors">Honors</a>
+          <a href="assets/Meng_Wei_CV.pdf">CV</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="line-field" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-        </div>
-        <div class="hero-grid">
+    <main id="top" class="page">
+      <section class="intro" aria-labelledby="intro-title">
+        <figure class="portrait">
+          <img src="assets/meng-wei-photo.jpeg" alt="Meng Wei">
+        </figure>
+        <div class="intro-copy">
           <p class="eyebrow">AI for medical imaging / computer vision / surgical AI</p>
-          <h1>Meng Wei</h1>
-          <div class="hero-copy">
-            <p>
-              I am a PhD researcher in AI for Medical Imaging at King's College London,
-              working on data-efficient learning, vision-language models, and surgical
-              instrument understanding.
-            </p>
-            <div class="actions">
-              <a class="button primary" href="assets/Meng_Wei_CV.pdf">Download CV</a>
-              <a class="button" href="mailto:meng.wei@kcl.ac.uk">Email</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section about" aria-labelledby="about-title">
-        <div class="section-label">About</div>
-        <div class="section-body">
-          <h2 id="about-title">Building learning systems for clinical visual understanding.</h2>
+          <h1 id="intro-title">Meng Wei</h1>
+          <p class="lead">
+            I am a PhD researcher in AI for Medical Imaging at King's College London,
+            working on data-efficient learning, vision-language models, and surgical
+            instrument understanding.
+          </p>
           <p>
             My research develops deep learning methods for challenging medical imaging
             settings, including surgical scene parsing, weak and semi-supervised learning,
             foundation model adaptation, and language-guided video segmentation.
           </p>
-          <div class="contact-strip">
-            <a href="mailto:meng.wei@kcl.ac.uk">meng.wei@kcl.ac.uk</a>
+          <div class="contact-links" aria-label="Contact links">
+            <a href="mailto:meng.wei@kcl.ac.uk">Email</a>
             <a href="https://cai4cai.ml/author/meng-wei/">Profile</a>
             <a href="assets/Meng_Wei_CV.pdf">CV</a>
           </div>
@@ -62,118 +52,142 @@
       </section>
 
       <section class="section" id="news" aria-labelledby="news-title">
-        <div class="section-label">News</div>
-        <div class="section-body">
-          <h2 id="news-title">Latest updates</h2>
-          <ol class="timeline">
-            <li>
-              <time>2026</time>
-              <span>Paper accepted to AAAI: <em>Where It Moves, It Matters: Referring Surgical Instrument Segmentation via Motion</em>.</span>
-            </li>
-            <li>
-              <time>2025</time>
-              <span><em>SegMatch: semi-supervised surgical instrument segmentation</em> published in Scientific Reports.</span>
-            </li>
-            <li>
-              <time>2024</time>
-              <span>Work on integrating vision transformer insights with adapters published in IJCARS.</span>
-            </li>
-          </ol>
-        </div>
+        <h2 id="news-title">News</h2>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-02">Feb 2026</time>
+            <span>I joined UHN and Vector Institute as a Research Fellow.</span>
+          </li>
+          <li>
+            <time datetime="2026-01">Jan 2026</time>
+            <span>
+              I attended AAAI 2026 in Singapore.
+              <img class="news-photo" src="assets/aaai-2026-singapore.jpeg" alt="Meng Wei at AAAI 2026 in Singapore">
+            </span>
+          </li>
+          <li>
+            <time datetime="2025-11">Nov 2025</time>
+            <span>One paper got accepted by AAAI.</span>
+          </li>
+        </ul>
       </section>
 
       <section class="section" id="publications" aria-labelledby="publications-title">
-        <div class="section-label">Selected Papers</div>
-        <div class="section-body">
-          <h2 id="publications-title">Research output</h2>
-          <div class="publication-list">
-            <article class="publication">
-              <p class="venue">AAAI 2026</p>
+        <h2 id="publications-title">Selected Papers</h2>
+        <div class="publication-list">
+          <article class="publication">
+            <div class="pub-meta">AAAI 2026</div>
+            <div>
               <h3>Where It Moves, It Matters: Referring Surgical Instrument Segmentation via Motion</h3>
               <p>Meng Wei, et al.</p>
-            </article>
-            <article class="publication">
-              <p class="venue">IEEE TMI 2025</p>
+              <div class="video-grid" aria-label="SurgRef paper videos">
+                <video controls autoplay loop muted playsinline preload="auto" aria-label="SurgRef experiment 1">
+                  <source src="assets/Testing_video_exp1.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay loop muted playsinline preload="auto" aria-label="SurgRef experiment 2">
+                  <source src="assets/Testing_video_exp2.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay loop muted playsinline preload="auto" aria-label="SurgRef experiment 3">
+                  <source src="assets/Testing_video_exp3.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay loop muted playsinline preload="auto" aria-label="SurgRef experiment 4">
+                  <source src="assets/Testing_video_exp4.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="pub-meta">IEEE TMI 2025</div>
+            <div>
               <h3>Surgical Instances and Part Semantics for Weakly-supervised Part-aware Instance Segmentation</h3>
               <p>Meng Wei, et al.</p>
-            </article>
-            <article class="publication">
-              <p class="venue">Scientific Reports 2025</p>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="pub-meta">Scientific Reports 2025</div>
+            <div>
               <h3>SegMatch: Semi-supervised Surgical Instrument Segmentation</h3>
               <p>Meng Wei, et al.</p>
-            </article>
-            <article class="publication">
-              <p class="venue">IJCARS 2024</p>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="pub-meta">IJCARS 2024</div>
+            <div>
               <h3>Enhancing Surgical Instrument Segmentation: Integrating Vision Transformer Insights with Adapter</h3>
               <p>Meng Wei, et al.</p>
-            </article>
-            <article class="publication">
-              <p class="venue">NeurIPS 2023</p>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="pub-meta">NeurIPS 2023</div>
+            <div>
               <h3>Text Promptable Surgical Instrument Segmentation with Vision-Language Models</h3>
               <p>Zijian Zhou, Meng Wei, et al.</p>
-            </article>
-            <article class="publication">
-              <p class="venue">IEEE JBHI 2020</p>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="pub-meta">IEEE JBHI 2020</div>
+            <div>
               <h3>Deep Learning for Hemorrhagic Lesion Detection and Segmentation on Brain CT Images</h3>
               <p>Meng Wei, et al.</p>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section split" id="education" aria-labelledby="education-title">
-        <div class="section-label">Education</div>
-        <div class="section-body">
-          <h2 id="education-title">Academic training</h2>
-          <div class="cards">
-            <article class="card">
-              <p class="date">2021 - 2025</p>
+      <section class="section" id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="entry-list">
+          <article class="entry">
+            <div class="entry-date">2021 - 2025</div>
+            <div>
               <h3>King's College London</h3>
               <p>PhD, AI for Medical Imaging. EPSRC-funded Smart Medical Imaging CDT.</p>
-            </article>
-            <article class="card">
-              <p class="date">2020 - 2021</p>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">2020 - 2021</div>
+            <div>
               <h3>Imperial College London</h3>
               <p>MRes, Artificial Intelligence and Machine Learning. Distinction.</p>
-            </article>
-            <article class="card">
-              <p class="date">2017 - 2020</p>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">2017 - 2020</div>
+            <div>
               <h3>University of Liverpool</h3>
               <p>BEng, Electrical Engineering. First-class honours.</p>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="section" id="experience" aria-labelledby="experience-title">
-        <div class="section-label">Experience</div>
-        <div class="section-body">
-          <h2 id="experience-title">Research and industry</h2>
-          <div class="experience-grid">
-            <article>
-              <p class="date">2021 - 2022</p>
+        <h2 id="experience-title">Experience</h2>
+        <div class="entry-list">
+          <article class="entry">
+            <div class="entry-date">2021 - 2022</div>
+            <div>
               <h3>Machine Learning Engineer Intern, Viridien</h3>
               <p>Worked on 3D vision for seismic imaging, synthetic data generation, and AI-assisted geoscience workflows.</p>
-            </article>
-            <article>
-              <p class="date">2019</p>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">2019</div>
+            <div>
               <h3>Summer Research Intern, UCLA</h3>
               <p>Developed deep learning methods for hemorrhagic stroke detection and segmentation on CT images.</p>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section compact" aria-labelledby="service-title">
-        <div class="section-label">Honors</div>
-        <div class="section-body">
-          <h2 id="service-title">Recognition and leadership</h2>
-          <ul class="plain-list">
-            <li>Dean's List honoree, Imperial College London.</li>
-            <li>Meritorious Winner, Mathematical Contest in Modeling.</li>
-            <li>Vice President, Women in Engineering Society, University of Liverpool.</li>
-          </ul>
-        </div>
+      <section class="section" id="honors" aria-labelledby="honors-title">
+        <h2 id="honors-title">Honors</h2>
+        <ul class="plain-list">
+          <li>Dean's List honoree, Imperial College London.</li>
+          <li>Meritorious Winner, Mathematical Contest in Modeling.</li>
+          <li>Vice President, Women in Engineering Society, University of Liverpool.</li>
+        </ul>
       </section>
     </main>
 

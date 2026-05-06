@@ -275,12 +275,6 @@ a:hover {
   color: var(--muted);
 }
 
-@media (min-width: 1280px) {
-  .publication h3 {
-    white-space: nowrap;
-  }
-}
-
 .video-grid {
   display: flex;
   flex-wrap: nowrap;

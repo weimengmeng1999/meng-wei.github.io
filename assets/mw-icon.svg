@@ -1,0 +1,15 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <title>MW monogram icon</title>
+  <path
+    d="M 41,100
+       C 41,24  79,74  100,74
+       C 121,74 159,24 159,100
+       C 159,176 121,126 100,126
+       C 79,126 41,176 41,100 Z"
+    fill="none"
+    stroke="#e6c56a"
+    stroke-width="9"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

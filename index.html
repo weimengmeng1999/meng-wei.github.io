@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Meng Wei - AI for medical imaging, computer vision, and surgical AI.">
     <title>Meng Wei</title>
+    <link rel="icon" href="assets/mw-icon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260506">
+    <link rel="stylesheet" href="styles.css?v=20260506-15">
   </head>
   <body>
     <header class="site-header">
@@ -20,6 +21,7 @@
           <a href="#education">Education</a>
           <a href="#experience">Experience</a>
           <a href="#honors">Honors</a>
+          <a href="#review-services">Review Services</a>
           <a href="assets/Meng_Wei_CV.pdf">CV</a>
         </nav>
       </div>
@@ -28,24 +30,38 @@
     <main id="top" class="page">
       <section class="intro" aria-labelledby="intro-title">
         <figure class="portrait">
-          <img src="assets/meng-wei-photo.jpeg" alt="Meng Wei">
+          <img src="assets/me.jpg" alt="Meng Wei">
         </figure>
         <div class="intro-copy">
-          <p class="eyebrow">AI for medical imaging / computer vision / surgical AI</p>
-          <h1 id="intro-title">Meng Wei</h1>
-          <p class="lead">
-            I am a PhD researcher in AI for Medical Imaging at King's College London,
-            working on data-efficient learning, vision-language models, and surgical
-            instrument understanding.
+          <p class="eyebrow">AI for Science / Applied AI / AI for Health</p>
+          <h1 id="intro-title">Short Bio</h1>
+          <p>
+            I am an applied AI researcher focusing on AI for health. I want to
+            contribute to leveraging AI to make human life better, especially through clinical AI, biomedical AI,
+            health monitoring, and broader AI for science.
           </p>
           <p>
-            My research develops deep learning methods for challenging medical imaging
-            settings, including surgical scene parsing, weak and semi-supervised learning,
-            foundation model adaptation, and language-guided video segmentation.
+            Previously, I was a fully funded PhD researcher in the
+            <a href="https://www.imagingcdt.com/">Smart Medical Imaging CDT</a>
+            programme at <a href="https://www.kcl.ac.uk/">King's College London</a>.
+            I obtained my master's degree at
+            <a href="https://www.imperial.ac.uk/">Imperial College London</a>, focusing
+            on medical imaging and robotics, and my undergraduate degree in electrical
+            engineering from the <a href="https://www.liverpool.ac.uk/">University of
+            Liverpool</a>. I previously interned at
+            <a href="https://www.viridiengroup.com/">Viridien</a>, formerly CGG, as a
+            machine learning engineer.
+          </p>
+          <h2 class="intro-subtitle">Research Interests</h2>
+          <p>
+            My research interests include computer vision, AI for science, multimodal
+            models, and robotics. My current research focuses on agentic frameworks for
+            biomedical applications.
           </p>
           <div class="contact-links" aria-label="Contact links">
-            <a href="mailto:meng.wei@kcl.ac.uk">Email</a>
-            <a href="https://cai4cai.ml/author/meng-wei/">Profile</a>
+            <a href="https://scholar.google.com/citations?user=LRFr7zAAAAAJ&hl=en">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/meng-wei-673803161">LinkedIn</a>
+            <a href="https://github.com/weimengmeng1999">GitHub</a>
             <a href="assets/Meng_Wei_CV.pdf">CV</a>
           </div>
         </div>
@@ -76,17 +92,59 @@
         <h2 id="publications-title">Selected Papers</h2>
         <div class="publication-list">
           <article class="publication">
-            <div class="pub-meta">AAAI 2026</div>
-            <div>
-              <h3>Where It Moves, It Matters: Referring Surgical Instrument Segmentation via Motion</h3>
-              <p>Meng Wei, et al.</p>
+            <figure class="pub-figure">
+              <img src="assets/on_device.png" alt="On-device LLM main figure">
+            </figure>
+            <div class="pub-content">
+              <h3>Benchmarking and Adapting On-Device LLMs for Clinical Decision Support</h3>
+              <p class="pub-authors"><em>Alif Munim, Omar Ibrahim, Alhusain Abdalla, Jun Ma, <u>Meng Wei</u>, Shuolin Yin, Leo Chen, and Bo Wang</em></p>
+              <p class="pub-venue"><a href="https://arxiv.org/pdf/2601.03266">[Paper]</a> <a href="https://github.com/bowang-lab/on-device-LLM">[GitHub]</a></p>
             </div>
           </article>
           <article class="publication">
-            <div class="pub-meta">IEEE TMI 2025</div>
-            <div>
-              <h3>Surgical Instances and Part Semantics for Weakly-supervised Part-aware Instance Segmentation</h3>
-              <p>Meng Wei, et al.</p>
+            <figure class="pub-figure">
+              <img src="assets/surgref-figure.png" alt="SurgRef main figure">
+            </figure>
+            <div class="pub-content">
+              <h3>Where It Moves, It Matters: Referring Surgical Instrument Segmentation via Motion</h3>
+              <p class="pub-authors"><em><u>Meng Wei</u>, Kun Yuan, Shi Li, Yue Zhou, Long Bai, Nassir Navab, Hongliang Ren, Hong Joo Lee,<br>Tom Vercauteren, Nicolas Padoy</em></p>
+              <p class="pub-venue">AAAI 2026 <a href="https://arxiv.org/abs/2601.12224">[Paper]</a> <a href="https://github.com/weimengmeng1999/SurgRef">[GitHub]</a></p>
+              <div class="motion-expression-grid" aria-label="SurgRef motion-centric expression videos">
+                <article class="motion-expression">
+                  <video controls autoplay loop muted playsinline preload="metadata" aria-label="SurgRef expression: Prograsp forceps travels around then stays idle">
+                    <source src="assets/surgref_seq10_prompt1.mp4" type="video/mp4">
+                  </video>
+                  <p>Prograsp forceps on the left travels around then stays idle.</p>
+                </article>
+                <article class="motion-expression">
+                  <video controls autoplay loop muted playsinline preload="metadata" aria-label="SurgRef expression: Prograsp forceps is travelling around then clamping on the right">
+                    <source src="assets/surgref_seq10_prompt3.mp4" type="video/mp4">
+                  </video>
+                  <p>Prograsp forceps is travelling around then clamping on the right.</p>
+                </article>
+                <article class="motion-expression">
+                  <video controls autoplay loop muted playsinline preload="metadata" aria-label="SurgRef expression: Large needle driver is suturing tissue on the left">
+                    <source src="assets/surgref_seq11_prompt2.mp4" type="video/mp4">
+                  </video>
+                  <p>Large needle driver is suturing tissue on the left.</p>
+                </article>
+                <article class="motion-expression">
+                  <video controls autoplay loop muted playsinline preload="metadata" aria-label="SurgRef expression: Large needle driver on the right is looping tissue with the needle and thread">
+                    <source src="assets/surgref_seq11_prompt4.mp4" type="video/mp4">
+                  </video>
+                  <p>Large needle driver on the right is looping tissue with the needle and thread.</p>
+                </article>
+              </div>
+            </div>
+          </article>
+          <article class="publication">
+            <figure class="pub-figure">
+              <img src="assets/surgpis-figure.png" alt="SurgPIS main figure">
+            </figure>
+            <div class="pub-content">
+              <h3>SurgPIS: Surgical-instrument-level Instances and Part-level Semantics for Weakly-supervised Part-aware Instance Segmentation</h3>
+              <p class="pub-authors"><em><u>Meng Wei</u>, Charlie Budd, Oluwatosin Alabi, Miaojing Shi, Tom Vercauteren</em></p>
+              <p class="pub-venue"><a href="https://arxiv.org/abs/2507.19592">[Paper]</a> <a href="https://github.com/weimengmeng1999/SurgPIS">[GitHub]</a></p>
               <div class="video-grid" aria-label="SurgPIS paper videos">
                 <video controls autoplay loop muted playsinline preload="metadata" aria-label="SurgPIS experiment 1">
                   <source src="assets/Testing_video_exp1.mp4" type="video/mp4">
@@ -104,31 +162,43 @@
             </div>
           </article>
           <article class="publication">
-            <div class="pub-meta">Scientific Reports 2025</div>
-            <div>
+            <figure class="pub-figure">
+              <img src="assets/segmatch-figure.png" alt="SegMatch main figure">
+            </figure>
+            <div class="pub-content">
               <h3>SegMatch: Semi-supervised Surgical Instrument Segmentation</h3>
-              <p>Meng Wei, et al.</p>
+              <p class="pub-authors"><em><u>Meng Wei</u>, Charlie Budd, Luis C Garcia-Peraza-Herrera, Reuben Dorent, Miaojing Shi, Tom Vercauteren</em></p>
+              <p class="pub-venue">Nature Scientific Reports 2025 <a href="https://www.nature.com/articles/s41598-025-94568-z">[Paper]</a></p>
             </div>
           </article>
           <article class="publication">
-            <div class="pub-meta">IJCARS 2024</div>
-            <div>
+            <figure class="pub-figure">
+              <img src="assets/enhancing-figure.png" alt="Enhancing surgical instrument segmentation main figure">
+            </figure>
+            <div class="pub-content">
               <h3>Enhancing Surgical Instrument Segmentation: Integrating Vision Transformer Insights with Adapter</h3>
-              <p>Meng Wei, et al.</p>
+              <p class="pub-authors"><em><u>Meng Wei</u>, Miaojing Shi, Tom Vercauteren</em></p>
+              <p class="pub-venue">IJCARS 2024 <a href="https://link.springer.com/article/10.1007/s11548-024-03140-z">[Paper]</a> <a href="https://github.com/weimengmeng1999/AdapterSIS">[GitHub]</a></p>
             </div>
           </article>
           <article class="publication">
-            <div class="pub-meta">NeurIPS 2023</div>
-            <div>
-              <h3>Text Promptable Surgical Instrument Segmentation with Vision-Language Models</h3>
-              <p>Zijian Zhou, Meng Wei, et al.</p>
+            <figure class="pub-figure">
+              <img src="assets/text-promtable-figure.png" alt="Text promptable surgical instrument segmentation main figure">
+            </figure>
+            <div class="pub-content">
+              <h3>Text promptable surgical instrument segmentation with vision-language models</h3>
+              <p class="pub-authors"><em>Zijian Zhou, Oluwatosin Alabi, <u>Meng Wei</u>, Tom Vercauteren, Miaojing Shi</em></p>
+              <p class="pub-venue">NeurIPS 2023 <a href="https://proceedings.nips.cc/paper_files/paper/2023/file/5af741d487c5f0b08bfe56e11d1883e4-Paper-Conference.pdf">[Paper]</a> <a href="https://github.com/franciszzj/TP-SIS">[GitHub]</a></p>
             </div>
           </article>
           <article class="publication">
-            <div class="pub-meta">IEEE JBHI 2020</div>
-            <div>
-              <h3>Deep Learning for Hemorrhagic Lesion Detection and Segmentation on Brain CT Images</h3>
-              <p>Meng Wei, et al.</p>
+            <figure class="pub-figure">
+              <img src="assets/gcn.png" alt="Regression of instance boundary by aggregated CNN and GCN main figure">
+            </figure>
+            <div class="pub-content">
+              <h3>Regression of Instance Boundary by Aggregated CNN and GCN</h3>
+              <p class="pub-authors"><em>Yanda Meng, <u>Meng Wei</u>, Dongxu Gao, Yitian Zhao, Xiaoyun Yang, Xiaowei Huang, Yalin Zheng</em></p>
+              <p class="pub-venue">ECCV 2020 <a href="https://link.springer.com/chapter/10.1007/978-3-030-58598-3_12">[Paper]</a> </p>
             </div>
           </article>
         </div>
@@ -137,25 +207,47 @@
       <section class="section" id="education" aria-labelledby="education-title">
         <h2 id="education-title">Education</h2>
         <div class="entry-list">
-          <article class="entry">
-            <div class="entry-date">2021 - 2025</div>
+          <article class="entry education-entry">
+            <img class="school-icon" src="assets/kcl-logo.svg" alt="" aria-hidden="true">
             <div>
-              <h3>King's College London</h3>
-              <p>PhD, AI for Medical Imaging. EPSRC-funded Smart Medical Imaging CDT.</p>
+              <div class="education-heading">
+                <h3>King's College London</a></h3>
+              </div>
+              <p>
+                2021 - 2025. PhD in AI for Medical Imaging. Supervised by
+                <a href="https://scholar.google.com/citations?user=zduEJkcAAAAJ&hl=en">Prof. Tom Vercauteren</a>
+                and
+                <a href="https://scholar.google.com/citations?user=aj2XHWoAAAAJ&hl=en">Prof. Miaojing Shi</a>.
+              </p>
             </div>
           </article>
-          <article class="entry">
-            <div class="entry-date">2020 - 2021</div>
+          <article class="entry education-entry">
+            <img class="school-icon" src="assets/imperial_logi.jpg" alt="" aria-hidden="true">
             <div>
-              <h3>Imperial College London</h3>
-              <p>MRes, Artificial Intelligence and Machine Learning. Distinction.</p>
+              <div class="education-heading">
+                <h3>Imperial College London</a></h3>
+              </div>
+              <p>
+                2020 - 2021. MRes in Medical Imaging and Robotics,
+                focusing on Artificial Intelligence and Machine Learning. Individual project supervised by
+                <a href="https://scholar.google.com/citations?user=jOHBpnoAAAAJ&hl=en">Dr. Stamatia (Matina) Giannarou</a>
+                and
+                <a href="https://scholar.google.com/citations?user=g_HtjLIAAAAJ&hl=en">Prof. Ben Glocker</a>.
+              </p>
             </div>
           </article>
-          <article class="entry">
-            <div class="entry-date">2017 - 2020</div>
+          <article class="entry education-entry">
+            <img class="school-icon" src="assets/liverpool-logo.svg" alt="" aria-hidden="true">
             <div>
-              <h3>University of Liverpool</h3>
-              <p>BEng, Electrical Engineering. First-class honours.</p>
+              <div class="education-heading">
+                <h3>University of Liverpool</a></h3>
+              </div>
+              <p>
+                2017 - 2020. BEng in Electrical Engineering. First-class honours. Final year project supervised by
+                <a href="https://scholar.google.com/citations?user=2oPuJqQAAAAJ&hl=en">Prof. Yao-chun Shen</a>
+                and
+                <a href="https://scholar.google.com/citations?user=nKCHXTAAAAAJ&hl=en">Prof. Yalin Zheng</a>.
+              </p>
             </div>
           </article>
         </div>
@@ -164,18 +256,27 @@
       <section class="section" id="experience" aria-labelledby="experience-title">
         <h2 id="experience-title">Experience</h2>
         <div class="entry-list">
-          <article class="entry">
-            <div class="entry-date">2021 - 2022</div>
+          <article class="entry experience-entry">
+            <img class="org-icon org-icon-wide" src="assets/viridien-logo.svg" alt="" aria-hidden="true">
             <div>
-              <h3>Machine Learning Engineer Intern, Viridien</h3>
+              <div class="experience-heading">
+                <h3>Viridien</a></h3>
+              <p>Machine Learning Engineer Intern, Jun 2021 - Feb 2022</p>
+              </div>
               <p>Worked on 3D vision for seismic imaging, synthetic data generation, and AI-assisted geoscience workflows.</p>
             </div>
           </article>
-          <article class="entry">
-            <div class="entry-date">2019</div>
+          <article class="entry experience-entry">
+            <img class="org-icon org-icon-wide" src="assets/ucla-logo.svg" alt="" aria-hidden="true">
             <div>
-              <h3>Summer Research Intern, UCLA</h3>
-              <p>Developed deep learning methods for hemorrhagic stroke detection and segmentation on CT images.</p>
+              <div class="experience-heading">
+                <h3>UCLA</h3>
+                <p>Summer Research Intern, Jul 2019 - Sep 2019</p>
+              </div>
+              <p>Developed deep learning methods for hemorrhagic stroke detection and segmentation on CT images. Supervised by
+                <a href="https://scholar.google.com/citations?user=9Z1pfWMAAAAJ&hl=en">Dr. Fabien Scalzo</a>
+                and
+                <a href="https://scholar.google.com/citations?user=UEp6MTkAAAAJ&hl=en">Prof. David S Liebeskind</a>.</p>
             </div>
           </article>
         </div>
@@ -184,9 +285,21 @@
       <section class="section" id="honors" aria-labelledby="honors-title">
         <h2 id="honors-title">Honors</h2>
         <ul class="plain-list">
-          <li>Dean's List honoree, Imperial College London.</li>
-          <li>Meritorious Winner, Mathematical Contest in Modeling.</li>
-          <li>Vice President, Women in Engineering Society, University of Liverpool.</li>
+          <li><a href="https://www.imperial.ac.uk/student-records-and-data/for-current-students/graduation-prizes/postgraduate-prizes/">Hamlyn Prize</a>, awarded for high overall performance on the MRes at Imperial College London, 2020.</li>
+          <li>Meritorious Winner, <a href="https://www.comap.com/contests/mcm-icm">Mathematical Contest in Modeling</a>, 2018.</li>
+          <li>Vice President, Women in Engineering Society, University of Liverpool, 2018 - 2020.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="review-services" aria-labelledby="review-services-title">
+        <h2 id="review-services-title">Review Services</h2>
+        <ul class="plain-list">
+          <li>MICCAI 2024</li>
+          <li>MICCAI 2025</li>
+          <li>IEEE Transactions on Medical Imaging * 2</li>
+          <li>ECCV 2026</li>
+          <li>Pattern Recognition and Computer Vision * 2</li>
+          <li>International Journal of Computer Vision * 1</li>
         </ul>
       </section>
     </main>

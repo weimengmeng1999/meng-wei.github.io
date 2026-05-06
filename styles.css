@@ -417,11 +417,6 @@ a:hover {
     gap: 6px;
   }
 
-  .video-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: none;
-  }
-
   .footer {
     align-items: flex-start;
     flex-direction: column;

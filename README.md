@@ -6,7 +6,6 @@ Static GitHub Pages site structured like an academic profile.
 
 - `index.html` - site content
 - `styles.css` - visual styling
-- `assets/Meng_Wei_CV.pdf` - downloadable CV
 
 ## Publish on GitHub Pages
 

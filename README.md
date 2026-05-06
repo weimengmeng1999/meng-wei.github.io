@@ -1,6 +1,6 @@
 # Meng Wei Personal Website
 
-Static GitHub Pages site inspired by the visual language of Isomorphic Labs and structured like an academic profile.
+Static GitHub Pages site structured like an academic profile.
 
 ## Local files
 
